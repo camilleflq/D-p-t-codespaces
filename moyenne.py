@@ -22,11 +22,10 @@ def moyenne(valeurs):
 
     ---
     """
-    if valeurs != [] :
-        return sum(valeurs)/len(valeurs)
-    else : return ValueError
-
-
+    if valeurs != []:
+        return sum(valeurs) / len(valeurs)
+    else:
+        raise ValueError("La liste ne doit pas être vide")
 
 
 if __name__ == "__main__":
